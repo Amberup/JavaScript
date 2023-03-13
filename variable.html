@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		   <!--将JS代码写在行内-->
+		<!-- // <input type="button" value="这是按钮" onclick="alert('哈哈')"> -->
+		   <!--将JS代码写在script标签中-->
+<!-- 		<script>
+			 alert('将JS代码写在script标签中')
+		</script> -->
+		   <!--将外部的JS文件引入后执行-->
+		   <!-- 注意：script标签中就不要再写其他的js代码了 -->
+		<!-- <script src="./js/1.js"></script> -->
+		<script>
+			<!-- 声明一个变量 -->
+			var a;
+			<!-- 给变量赋值 -->
+			a=22;
+
+			<!-- 声明一个变量并为这个变量赋值 -->
+			var age=22;
+			var b=21;
+
+			<!-- 一次性声明多个变量并赋值 -->
+			var h1=1,h2=2,h3=3;
+			alert(h1)
+			alert(a)
+			// 变量的名字 必须是 数字、字母、下划线_ 和 $组成
+			// 不能以数字开头 不能有特殊字符
+			// 变量的名字 不可以是关键字 for while if
+			// 变量必须有意义
+
+			var name='t'
+			var age='22'
+
+			// 在JS中 变量是区分大小写的
+			var name=a;
+			var Name=b;
+			// 这是两个变量
+
+			// 如果变量重名 后面的会替换前面
+			var name='12'
+			var name='14'
+			// name最后的值为14 后面的值会把前面的值替换掉
+
+			// 变量的命名尽可能使用驼峰命名法
+			// 例如 在第二个单词的第一个首字母大写 后面还有的话再大写
+			var userName='haha'
+		</script>
+	</body>
+</html>
