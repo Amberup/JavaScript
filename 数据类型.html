@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>数据类型</title>
+	</head>
+	<body>
+		<script>
+			// 数值 number 字符串string 布尔Boolen undefined null 对象Object
+
+			// 这里的李四不是字符串
+			// var str1=李四;
+			// 使用单引号 或者双引号引起来的才是字符串
+			var str1="李四";
+
+			// 这个123是字符串  引号引起来的就是字符串
+			var k='123';
+
+			// 如果在字符串中使用引号，需要加上转义字符
+			var str='哈哈 "haha"\'hah\''
+			// alert(str)
+			var kongGe="一个空格\b两个空格\b\b三个空格\b\b\b哈"
+			// alert(kongGe)
+
+			// 转义转义字符
+			var zhuanYi="我喜欢斜杠 \ 一个斜杠\\"
+			// alert(zhuanYi)
+
+			var s1='123';
+			// console.log(s1.length)
+			var s2='456'
+			var s3=s1+s2
+			var s4=7
+			var s5=8
+			// +既可以作为数学运算使用也可以作为字符串拼接使用
+			// 从前往后进行运算，如果两个变量都是数值型那么加号作为数学运算符
+			console.log(s4+s1+s5+s4)
+
+			// Boolean 类型
+			// Boolean字面量：true 和 false,区分大小写
+			// 计算机内部存储：true 为 1，false 为 0
+
+			// Undefined 和 Null
+			//  undefined 表示一个声明了没有赋值的变量，变量之声明的时候值默认是undefined
+
+			var a
+			console.log(a);
+			//  undefined
+			// null 表示一个空，变量的值如果想为 null，必须手动设置
+
+			// 谷歌浏览器中 字符串的颜色是黑色的 数值类型是蓝色的 布尔类型是蓝色的 undefined和null是灰色的
+			console.log('ss',2,null,undefined,true)
+
+			// 获取变量的类型 Typeof
+
+			var age = 18;
+
+			console.log(typeof age)// ‘ number '
+
+
+
+			// 其他类型转换成字符串类型的方法有如下几种。
+
+			// 1、toString()
+
+			var num = 5;
+			console.log(typeof num)
+
+			console.log(num.toString());
+
+			// 2、String()
+
+			var s = null;
+
+			// console.1og(s . toString();
+
+			// console. 1og(Str ing(s));
+
+			// String() 函数存在的意义:有些值没有 toStr ing(),
+
+			// 这个时候可以使用 Str ing().比如: undefined 和 null
+
+			// 3、拼接字符串方式
+
+			// num + "", 当+两边一个操作符是字符串类型,一个操作符是其它类型的时候，
+			// 会先把其它类型转换成字符串再讲行字符串拼接，返回字符串。
+
+
+
+		</script>
+
+	</body>
+</html>
