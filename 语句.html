@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// If 判断
+
+			// 一、流程控制
+			// 程序的三种基本结构
+			// 顺序结构:从上到下执行的代码就是顺序结构程序默认就是由上到下顺序执行的;
+			// 分支结构:根据不同的情况及判断，执行对应代码;
+			// 循环结构:重复执行一段代码;
+
+			// 二、If else的的运行结果:
+			if (2>1){
+			console.log(1)
+			}
+
+			// if（判断条件）
+			// 条件要成立，才能执行。反之则不能。
+			// if else if 开始时，条件成立时，在前面的则会被执行；如果有代码执行，那后面的代码，不管条件是否成立，都不会被执行；如果前面的条件都是不成立，就执行else 代码。
+			// 如:
+			// 例1
+			var n1=100;
+			var n2 = 20;
+			if(n1>n2){
+			console.log(n1);
+			}else{
+			console. log(n2);
+			}
+			// 运行结果是 100.
+			// 例2
+			var n = 7;
+			if(n%2 == 0){
+			console.log("偶数")
+			}else{
+
+			console.log('奇数')
+			}
+			// 运行结果是奇数
+
+			// Swith-case 的用法
+
+			// 格式：
+			// switch (值){
+				// case 值1:
+				// code;
+				// break;
+				// case 值2:
+				// code;
+				// break;
+				// default:
+				// code;
+				// break;
+			// }
+
+			// 案例1：
+			var jiebie ="12";
+			switch (jiebie) {
+				case "A":
+					console.log( '90以上');
+					break;
+				case "B":
+					console.log('80--90之间');
+					break;
+				case "c":
+					console.log('70--80之间');
+					break;
+
+				default:
+					console.log("没有哦")
+			}
+
+
+
+			// While 循 环
+
+			// 一、while循环简介
+			// 在 JS 语言中，循环语句有三种，while、 do while、for 循环。
+			// 如果条件成立，里面的代码就会一直反复执行，每次执行代码前都要对条件进行重新判断，直到条件不成立，循环结束。
+			// Script
+			//while(条件)
+			//   代码
+			//   }
+			// var i = 0;
+			// while(i<10){
+			// 	console.log(i);
+			// 	i++;
+			// }
+
+			//请计算 1-100 之间所有数字的和
+			//请使用 while 循环
+			var i=1;
+			var s=0;
+			while(i<=100){
+				s= s + i ;
+				i++;
+			 }
+			console.log(s);
+
+			//请计算 100 以内的 7 的倍数有哪些
+			var i=1;
+			while(i<=100){
+				if(i%7==0){;
+					console.log(i);
+				}
+				i++;
+			}
+
+			//请打印 100 以内所有偶数的和
+
+			var i = 0;
+			var s = 0;
+			while(i<=100) {
+			if (i%2==0) {
+				s =s+i;
+			}
+				i++;
+			}
+			console.log(s);
+
+
+			// do-while 循环
+
+			// 一、do...while 语句
+			// 1、do...while 语句分析
+			// do.while 循环和 while 循环非常像，二者经常可以相互替代，
+			// 但是 do.while 的特点是不管条件成不成立，都会执行一次。
+			// do {//循环体;
+			// } while (循环条件);
+
+			// 2、do...while 语句和 while 语句区别
+			// do.while 语句的结构是：
+			// do{代码}while(条件)，
+			// 原来的 while 语句的结构是：
+			// while(条件){
+			// 代码
+			// }
+
+			// 这里看到两个语句是条件，代码顺序不一样。
+			// while 语句是先判断条件有没有成立，然后代码才执行。
+			// do…while 语句循环是先执行一次代码，然后再进行条件判断，如果条件成立代码继续循环执行，条件不成立，代码不执行。语句中的代码总会执行一次。
+
+			//  案例 1:计算 1 +2+3+4..... +99+100 的结果
+			//初始化变量
+			var i = 1110;
+			var sum = 1;
+			do {
+				sum += i;  //循环体
+				i++;  //自增
+				console.log(i)
+				console.log(sum)
+			} while ( i <= 100);  //循环条件
+
+			// for 循环
+			// for 循环结构
+			// for (初始表达式；判断表达式；自增自减运算){
+			// 代码
+			// }
+			// 例：
+			// var i = 1;
+			// while(i<10){
+			// 	console.log(i);
+			// 	i++;
+			// }
+			// 转换为 for 循环：
+			// for(var i=1;i<10;i++){
+			//    console.log(i);
+			// }
+
+			 // 计算 1-100 所有数的和
+			// var s = 0;
+			// for(var i=0;i<100;i++){
+			//    s+=i;
+			// }
+			// console.log(s);
+			//  // 计算 1-100 所有偶数之和
+			// var s =0;
+			// for(var i=0;i<=100;i++){
+			// 	if(i%2 ==0){
+			// 		s+=i;
+			//    }
+			// }
+			// console.log(s);
+
+			// // 10×10“*”矩阵
+			// console.log(s)
+			// var s ="";
+			// for(var i=0;i<10;i++){
+			// 	for(var h=0;h<10;h++){
+			// 		s+="*";
+			// }
+			// 	s+="\n";
+			// }
+			// console.log(s);
+
+			// for 循环打印三角形
+			var s="";
+			for(var i=0;i<10;i++){
+				for(var h=i;h<10;h++){
+					s+="*";
+				}
+				s+="\n";
+			}
+			console.log(s);
+			// 打印9*9乘法表
+			var str="";
+			for(var i=1;i<10;i++){
+				for(var j=i;j<10;j++){
+					str+=i+"*"+j+"="+(i*j)+'\t';
+				}
+				str+="\n";
+			}
+			console.log(str)
+
+		</script>
+	</body>
+</html>
