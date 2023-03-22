@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var obj1={
+				name:'hah',
+				age:19,
+				fun:function(){
+					// 在方法中的this指的就是这个方法所在的对象
+					var s=this.age;
+					console.log(s);
+				}
+			}
+			obj1.fun();
+
+			function f(){
+				// 普通的函数也是有this的
+				// this指向全局对象(window)
+				console.log(this);
+			}
+			f();
+			//This永远指向一个对象
+			//this在什么情况下什么地方指向那个对象
+
+
+			k=678;
+			function fun(){
+				console.log(this.k);
+
+			}
+			var o1={
+				k:'123',
+				f:fun,
+			}
+			var o2={
+				k:'345',
+				f:fun,
+			}
+
+			o1.f();
+			o2.f();
+			// this 运行在那个对象下就指向那个对象
+
+			var o1={
+				age:18,
+				fun:function(){
+					console.log(this.age);
+				}
+			}
+
+			var o2={
+				age:16,
+				fun:o1.fun,
+			}
+			o2.fun(); 	//16
+
+			// 对象的遍历及删除
+			var o1= {
+				name:'aa',
+				age:15,
+				sex:'男',
+			}
+
+			for (var k in o1){
+				console.log(o1[k]);
+			}
+
+			// for in遍历数组
+			var arr=[2,4,7,9];
+			for (var k in arr){
+				console.log(arr[k]);
+			}
+			console.log(o1);
+
+			// 删除数组中某一个属性
+			delete o1.age;
+			console.log(o1);
+
+			// 包装对象
+			// 原始类型的数据在一定条件下可以自动转为对象，这就是包装对象
+			var v1=new Number(123);
+			console.log(v1);
+			// 原始值可以自动当做对象来调用，可以调用各种属性及方法，
+			// 如果包装对象使用完成，会自动立即销毁。
+
+			var a='456';
+			console.log(a.length);
+
+			// 数学对象
+			// var n=-2;
+			// var n2=Math.abs(n);
+			// console.log(n2);
+
+			// var r=Math.random();
+			// console.log(r);
+
+			// 随机输出0-1之间的数
+			n1=Math.random()*10;
+			console.log(n1);
+
+			// 返回最大的整数
+			console.log(Math.floor(n1));
+
+			// 获取n-m之间的随机数值
+			// Math.random()*(m-n)+n
+
+			// var n=Math.floor(Math.random()*(32-11)+11);
+			// console.log(n);
+
+			var n=Math.floor(Math.random()*(32-11));
+			console.log(n);
+
+			//
+
+		</script>
+	</body>
+</html>
