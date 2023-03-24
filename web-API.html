@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 获取时间对象的方法
+			//实例化构造函数获取时间对象
+			var time=new Date();
+			console.log(time);
+			// Fri Mar 24 2023 10:46:54 GMT+0800 (中国标准时间)
+
+			// 二、范例
+			// 获取当前的时间：
+			var n=Date.now();
+			console.log(n);
+			// 从1970年1月1日到现在过了多少毫秒
+			// 1679626138907
+
+
+			// 获取小时:
+			var da=new Date();
+			console.log(da.getHours());
+
+			// 获取月份:
+			console.log(da.getMonth());
+
+			// 获取年份:
+			console.log(da.getFullYear());
+			// JS 获取的时间是计算本地时间，
+
+			// JS 中月份的数组是从 0 开始的，如果要获取正常的月份可在后面 +1
+
+			/*
+			// 数组对象
+
+			// 数组对象的属性及方法
+			// length 属性:返回数组的成员数量。
+			*/
+
+			var arr=[1,3,5,7,9];
+			console.log(arr.length);  // 5
+
+			console.log(arr.slice(2,4));
+
+			// 数组对象的常用方法举例
+
+			//  push 方法用于在数组的末端添加一个或多个元素，并返回添加新元素后的数组长度。
+			//  注意，该方法会改变原数组。
+
+			var a =[];
+
+			a.push(1,2,"3");
+			console.log(a);
+			a.push(2);
+			console.log(a);
+			a.push(true,{});
+
+			console.log(a);//[1,’a’,true]
+
+			// pop 方法用于删除数组的最后一个元素，并返回该元素。注意，该方法会改变原数组
+
+			// var a=[“a”,”b”,”c”]
+
+			// a.pop()//”c”
+
+			// console.log(a);//[“a”,”b”]
+
+			// // 示例：
+
+			// var arr =[1,6,4,8,2,4];
+
+			// console.log(arr.length)
+
+			// var k = 3；
+
+			// arr.push(k);
+
+			// console.log(arr)；
+
+			// // 1arr.pop()主
+
+			// console.ldg(arr)；
+
+			// console.log(arr.slice(2,4));
+
+			// console.log(arr)；
+
+
+
+			// var kk =["q',"k",'h'];
+
+			// // /1 var h = arr.concat(kk);
+
+			// console.log(arr)；
+
+			// console.log(h);
+
+			// var s = arr.join('')；
+
+			// console.log(s);
+
+
+		</script>
+	</body>
+</html>
