@@ -6,101 +6,95 @@
 	</head>
 	<body>
 		<script>
-			// 获取时间对象的方法
-			//实例化构造函数获取时间对象
-			var time=new Date();
-			console.log(time);
-			// Fri Mar 24 2023 10:46:54 GMT+0800 (中国标准时间)
+			<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- <div id="time">2023-3-28</div> -->
+		<!-- <ul>
+			<li>h1</li>
+			<li>h2</li>
+			<li>h3</li>
+			<li>h4</li>
+			<li>h5</li>
+		</ul>
+		<ol id="ol">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ol> -->
+		<div class="box">盒子1</div>
+		<!-- <div class="box">盒子2</div> -->
+		<div id="nav">
+			<ul>
+				<li>首页</li>
+				<li>产品</li>
+			</ul>
+		</div>
 
-			// 二、范例
-			// 获取当前的时间：
-			var n=Date.now();
-			console.log(n);
-			// 从1970年1月1日到现在过了多少毫秒
-			// 1679626138907
-
-
-			// 获取小时:
-			var da=new Date();
-			console.log(da.getHours());
-
-			// 获取月份:
-			console.log(da.getMonth());
-
-			// 获取年份:
-			console.log(da.getFullYear());
-			// JS 获取的时间是计算本地时间，
-
-			// JS 中月份的数组是从 0 开始的，如果要获取正常的月份可在后面 +1
-
-			/*
-			// 数组对象
-
-			// 数组对象的属性及方法
-			// length 属性:返回数组的成员数量。
-			*/
-
-			var arr=[1,3,5,7,9];
-			console.log(arr.length);  // 5
-
-			console.log(arr.slice(2,4));
-
-			// 数组对象的常用方法举例
-
-			//  push 方法用于在数组的末端添加一个或多个元素，并返回添加新元素后的数组长度。
-			//  注意，该方法会改变原数组。
-
-			var a =[];
-
-			a.push(1,2,"3");
-			console.log(a);
-			a.push(2);
-			console.log(a);
-			a.push(true,{});
-
-			console.log(a);//[1,’a’,true]
-
-			// pop 方法用于删除数组的最后一个元素，并返回该元素。注意，该方法会改变原数组
-
-			// var a=[“a”,”b”,”c”]
-
-			// a.pop()//”c”
-
-			// console.log(a);//[“a”,”b”]
-
-			// // 示例：
-
-			// var arr =[1,6,4,8,2,4];
-
-			// console.log(arr.length)
-
-			// var k = 3；
-
-			// arr.push(k);
-
-			// console.log(arr)；
-
-			// // 1arr.pop()主
-
-			// console.ldg(arr)；
-
-			// console.log(arr.slice(2,4));
-
-			// console.log(arr)；
+		<script>
+			// Web API 是浏览器提供的一套操作浏览器功能和页面元素的API(BOM和DOM）
+			// var timer=document.getElementById('time');
+			// console.log(typeof timer);
+			// 打印返回的元素对象  更好的查看里面的属性和方法
+			// console.dir(timer);
 
 
+			// 使用getElementsByTagName() 方法可以返回带有指定标签名的对象的集合
+			// 如果页面中只有一个li 返回的还是伪数组的形式
+			// var lis=document.getElementsByTagName('li');
+			// console.log(lis);
+			// console.log(lis[0])
+			// 依次打印元素的对象可以采用遍历的方式
+			// for (var i=0;i<lis.length;i++){
+			// 	// console.log(lis[i]);
+			// }
 
-			// var kk =["q',"k",'h'];
+			// var ol=document.getElementsByTagName('ol');
+			// console.log(ol[0].getElementsByTagName("li"));
 
-			// // /1 var h = arr.concat(kk);
+			// var ol=document.getElementById('ol');
+			// console.log(ol.getElementsByTagName("li"));
 
-			// console.log(arr)；
+			// document.getElementsByClassName() 根据类名选择某些元素集合
+			// var boxs=document.getElementsByClassName("box");
+			// console.log(boxs);
 
-			// console.log(h);
+			 // document.querySelector('选择器')； 根据指定选择器返回第一个元素对象
+			 // 里面的选择器需要加符号，.box  #nav
+			 var firstBox =document.querySelector(".box");
+			 // console.log(firstBox);
 
-			// var s = arr.join('')；
+			 var nav=document.querySelector('#nav');
+			 // console.log('nav');
 
-			// console.log(s);
+			 var li=document.querySelector("li");
+			 // console.log(li);
+
+			 // document.querySelectorAll返回指定选择器所有的元素对象
+			 var allBox=document.querySelectorAll('.box');
+			 // console.log(allBox);
+
+			// 获取body元素
+			var bodyEle=document.body;
+			// console.log(bodyEle);
+			// console.dir(bodyEle)
+			// 获取html元素
+			var htmlEle=document.documentElement;
+			console.log(htmlEle);
+
+
+
+
+		</script>
+	</body>
+</html>
 
 
 		</script>
