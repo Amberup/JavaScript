@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 一、如何将其他类型转换为数值类型
+			var a ="1";
+			// console.log(a)
+			// console.log(typeof a)
+			// var b = Number(a);
+			// console.log(b)
+			// console.log(typeof b)
+
+			// 二、其他转换方法
+			// Number 转换
+			// var c = Number('c')
+			// var d = Number(null);
+			// var e = Number(undefined);
+			// var f = Number("");
+			// console.log(c,d,e,f);
+			// NaN 0 NaN 0
+
+			// parseInt 转换  解析一个字符串并返回指定基数的十进制整数
+			// var a = parseInt("2");
+			// var b = parseInt('k23');
+			// var c = parseInt(null);
+			// var d = parseInt(undefined);
+			// console.log(a,b,c,d);
+			// 2 NaN NaN NaN
+
+			// parseFloat 转换
+			// var a = parseFloat("1.23df");
+			// // de为字符串 转不出来舍弃
+			// var b = parseFloat("1.3.4.5");
+			// var c = parseFloat("h34");
+			// var d = parseFloat(null);
+			// var e = parseFloat(undefined);
+			// console.log(a,b,c,d,e);
+			// 1.23 1.3 NaN NaN NaN
+
+			var a=Boolean("0");
+			var b=Boolean(0);
+			// 数值型的转为布尔型的为false
+			var c=Boolean("2");
+			// 只要是字符串，无论字符串里面的内容是什么，转为布尔型结果都为true
+			var d=Boolean(null);
+			var e=Boolean(undefined);
+			var f=Boolean(' ');
+			// 空格字符串转换为布尔型结果为true
+
+			console.log(a,b,c,d,e,f)
+
+			
+
+
+
+		</script>
+	</body>
+</html>
