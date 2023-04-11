@@ -19,60 +19,81 @@
 </head>
 
 <body>
-	<!-- <button id='btn'>按钮1</button>
-    <div>123</div> -->
+	<!-- <button id='btn'>按钮1</button> -->
+    <div>123</div>
 
-    <button>按钮</button>
-    <input type="text" value="输入内容">
+    <!-- <button>按钮</button>
+    <input type="text" value="输入内容"> -->
 
     <script>
-        // 点击一个按钮，弹出对话框
-        // 1. 事件是有三部分组成  事件源  事件类型  事件处理程序   我们也称为事件三要素
-        //(1) 事件源 事件被触发的对象   谁  按钮
-		// var btn=document.getElementById('btn');
-		// btn.onclick=function(){
-		// 	alert('嗨');
-		// }
+        // // 点击一个按钮，弹出对话框
 
-        //(2) 事件类型  如何触发 什么事件 比如鼠标点击(onclick) 还是鼠标经过 还是键盘按下
-        //(3) 事件处理程序  通过一个函数赋值的方式 完成
+        // // 1. 事件是有三部分组成  事件源  事件类型  事件处理程序   我们也称为事件三要素
+        // //(1) 事件源 事件被触发的对象   谁  按钮
+		// // var btn=document.getElementById('btn');
+		// // btn.onclick=function(){
+		// // 	alert('嗨');
+		// // }
 
-         // 执行事件步骤
-        // 点击div 控制台输出 我被选中了
-        // 1. 获取事件源
-        // var div = document.querySelector('div');
-        // 2.绑定事件 注册事件
-        // div.onclick 
-        // 3.添加事件处理程序 
-        // div.onclick = function() {
-        //     console.log('我被选中了');
+        // //(2) 事件类型  如何触发 什么事件 比如鼠标点击(onclick) 还是鼠标经过 还是键盘按下
+        // //(3) 事件处理程序  通过一个函数赋值的方式 完成
+
+        //  // 执行事件步骤
+        // // 点击div 控制台输出 我被选中了
+        // // 1. 获取事件源
+        // // var div = document.querySelector('div');
+        // // 2.绑定事件 注册事件
+        // // div.onclick 
+        // // 3.添加事件处理程序 
+        // // div.onclick = function() {
+        // //     console.log('我被选中了');
  
+        // // }
+
+        // // 当我们点击了按钮，  div里面的文字会发生变化
+        // // 1. 获取元素 
+        // var btn =document.querySelector('button');
+        // var div = document.querySelector('input');
+        // // 2.注册事件
+        // btn.onclick=function(){
+        //     input.interHTML="点击了";
+        // }
+ 
+        // function getDate() {
+        //     var date = new Date();
+        //     var year = date.getFullYear();
+        //     var month = date.getMonth() + 1;
+        //     var dates = date.getDate();
+        //     var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        //     var day = date.getDay();
+        //     return '今天是：' + year + '年' + month + '月' + dates + '日 ' + arr[day];
+        // }
+        // // 我们元素可以不用添加事件
+        // var p = document.querySelector('p');
+        // p.innerHTML = getDate();
+
+
+        // 执行事件步骤
+        // 获取事件源
+        var div=document.querySelector("div");
+        // 2.绑定事件
+        // div.onclick
+        // 3.添加事件处理程序
+        div.onclick=function(){
+            console.log('我被选中了！');
+        }
+        div.onmouseover=function(){
+            console.log("鼠标经过");
+        }
+        // div.onfocus=function(){
+        //     console.log("得到焦点");
+        // }
+        // div.onblur=function(){
+        //     console.log("失去焦点");
         // }
 
-        // 当我们点击了按钮，  div里面的文字会发生变化
-        // 1. 获取元素 
-        var btn =document.querySelector('button');
-        var div = document.querySelector('input');
-        // 2.注册事件
-        btn.onclick=function(){
-            input.interHTML="点击了";
-        }
+        
 
-      
-     
- 
-        function getDate() {
-            var date = new Date();
-            var year = date.getFullYear();
-            var month = date.getMonth() + 1;
-            var dates = date.getDate();
-            var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-            var day = date.getDay();
-            return '今天是：' + year + '年' + month + '月' + dates + '日 ' + arr[day];
-        }
-        // 我们元素可以不用添加事件
-        var p = document.querySelector('p');
-        p.innerHTML = getDate();
 
 
     </script>
