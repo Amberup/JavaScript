@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>div</div>
+    <span>span</span>
+    <ul>
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+    </ul>
+    <div class="demo">
+        <div class="box">
+            <span class="erweima">x</span>
+        </div>
+    </div>
+    
+    <script>
+        var box=document.querySelector('.box');
+        console.dir(box);//显示js对象的属性列表
+        // 元素节点nodeType为1
+        // 属性节点nodeType为2
+        // 文本节点nodeType 为3（文本节点包含文字、空格、换行等)
+
+        // 父节点parentNode
+        var erweima=document.querySelector('.erweima');
+        // 得到的是离元素最近的父节点 如果找不到 就返回null
+        console.log(erweima.parentNode);
+
+        // DOM提供的方法获取li
+        var ul=document.querySelector('ul');
+        var lid=ul.querySelectorAll('li');
+
+        // 子节点 childNodes包含所有的节点 有元素节点 文本节点等等 
+        // 也包括换行(属于文本节点 为text)
+        console.log(ul.childNodes);
+        console.log(ul.childNodes[0].nodeType); //是文本节点 nodeType为3
+        console.log(ul.childNodes[1].nodeType); //是元素节点 nodeType为1
+
+        // 2.children获取所有的子 '元素' 节点
+        console.log(ul.children);
+    </script>
+</body>
+</html>
