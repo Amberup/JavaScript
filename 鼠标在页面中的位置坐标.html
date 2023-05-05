@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // addEventListener在文档中添加点击事件
+        document.addEventListener('click',function(e){
+            // clientX/Y文档在可视区的坐标  不随着滚轮滚动
+            console.log(e.clientX);
+            console.log(e.clientY);
+            console.log('---------------------')
+            
+            // pageX/Y在页面文档的x和y坐标
+            console.log(e.pageX);
+            console.log(e.pageY);
+            console.log('---------------------')
+
+            // screen鼠标在电脑屏幕的x和y坐标
+            console.log(e.screenX)
+            console.log(e.screenY)
+            console.log('==============================')
+
+
+        })
+
+    </script>
+    
+</body>
+</html>
